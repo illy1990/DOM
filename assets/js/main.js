@@ -38,3 +38,77 @@ function ClickMeTwice() {
         document.getElementsByClassName("active")[index].style.color = "black";
     }
 }
+
+
+// --------------------------------------- Eigene Lösung ---------------------------------------
+
+// document.getElementById("button").addEventListener("click", () => {
+//     let a = document.getElementById("farbeAuswahlen").selectedIndex;
+
+//     if (a == 0) {
+//         console.log(a)
+//         document.body.style.backgroundColor = "MediumOrchid";
+//     }
+//     else if (a == 1) {
+//         console.log(a)
+//         document.body.style.backgroundColor = "DodgerBlue";
+//     }
+//     else if (a == 2) {
+//         console.log(a)
+//         document.body.style.backgroundColor = "MintCream";
+//     }
+//     else if (a == 3) {
+//         console.log(a)
+//         document.body.style.backgroundColor = "DodgerBlue";
+//     }
+//     else if (a == 4) {
+//         console.log(a)
+//         document.body.style.backgroundColor = "Goldenrod";
+//     }
+//     else if (a == 5) {
+//         console.log(a)
+//         document.body.style.backgroundColor = "Wheat";
+//     }
+//     else if (a == 6) {
+//         console.log(a)
+//         document.body.style.backgroundColor = "MediumTurquoise";
+//     }
+//     else if (a == 7) {
+//         console.log(a)
+//         document.body.style.backgroundColor = "Moccasin";
+//     }
+//     else if (a == 8) {
+//         console.log(a)
+//         document.body.style.backgroundColor = "FireBrick";
+//     }
+//     else if (a == 9) {
+//         console.log(a)
+//         document.body.style.backgroundColor = "LimeGreen";
+//     }
+//     else if (a == 10) {
+//         console.log(a)
+//         document.body.style.backgroundColor = "SlateGray";
+//     } else { }
+// })
+// --------------------------------------- Eigene Lösung ---------------------------------------
+// ---------------------------------------  Lösung Anass ---------------------------------------
+
+document.querySelector("body").style.background = "black"
+
+// console.log(document.getElementById("farbeAuswahlen").selectedIndex)
+// let i = document.getElementById("farbeAuswahlen").selectedIndex
+// console.log(document.getElementById("farbeAuswahlen").options[i].value)
+//ist gleich wie console.log(document.getElementById("farbeAuswahlen").options[i].innerHTML)
+
+let getFarbe = () => {
+    let j = document.getElementById("farbeAuswahlen").selectedIndex
+    let farbe = document.getElementById("farbeAuswahlen").options[j].innerHTML
+    console.log(farbe)
+    console.log(farbe.split(" "))
+    farbe = farbe.split(" ").join("")
+    return farbe
+}
+document.getElementById("button").addEventListener("click", (e) => {
+    document.querySelector("body").style.background = getFarbe()
+})
+// ---------------------------------------  Lösung Anass ---------------------------------------

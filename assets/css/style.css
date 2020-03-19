@@ -82,7 +82,7 @@ div {
 /* <!-- ------- Aufgabe 4 ------- CodeFlow Übung lev2_3: getElementsByTagName ------- --> */
 
 
-ul {
+/* ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -108,6 +108,20 @@ li a:hover:not(.active) {
 
 .active {
     background-color: #4CAF50;
-}
+} */
 
 /* <!-- ------- Aufgabe 4 ------- CodeFlow Übung lev2_3: getElementsByTagName ------- --> */
+/* <!-- ------- Aufgabe 5 ------- CodeFlow Übung lev2_4: DOM Background Colors ------- --> */
+form {
+    padding: 5px;
+    display: inline-block;
+    background: #999;
+    border-radius: 5px;
+}
+
+input {
+    background: #333;
+    color: white;
+}
+
+/* < !-- ------- Aufgabe 5 ------- CodeFlow Übung lev2_4: DOM Background Colors ------- -->*/

@@ -23,3 +23,18 @@ function formular() {
 
     console.log(output)
 }
+
+function ClickMeTwice() {
+    document.getElementById("navHome").style.backgroundColor = "#f6c89f";
+    document.getElementById("navNews").style.backgroundColor = "#ffe7d1"
+    document.getElementById("navContact").style.backgroundColor = "#4b8e8d";
+    document.getElementById("navChange").style.backgroundColor = " #396362";
+
+    for (let index = 0; index < document.getElementsByClassName("nav").length; index++) {
+        document.getElementsByClassName("nav")[index].style.color = "black";
+    }
+
+    for (let index = 0; index < document.getElementsByClassName("active").length; index++) {
+        document.getElementsByClassName("active")[index].style.color = "black";
+    }
+}

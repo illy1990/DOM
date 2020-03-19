@@ -93,22 +93,22 @@ function ClickMeTwice() {
 // --------------------------------------- Eigene Lösung ---------------------------------------
 // ---------------------------------------  Lösung Anass ---------------------------------------
 
-document.querySelector("body").style.background = "black"
+// document.querySelector("body").style.background = "black"
 
 // console.log(document.getElementById("farbeAuswahlen").selectedIndex)
 // let i = document.getElementById("farbeAuswahlen").selectedIndex
 // console.log(document.getElementById("farbeAuswahlen").options[i].value)
 //ist gleich wie console.log(document.getElementById("farbeAuswahlen").options[i].innerHTML)
 
-let getFarbe = () => {
-    let j = document.getElementById("farbeAuswahlen").selectedIndex
-    let farbe = document.getElementById("farbeAuswahlen").options[j].innerHTML
-    console.log(farbe)
-    console.log(farbe.split(" "))
-    farbe = farbe.split(" ").join("")
-    return farbe
-}
-document.getElementById("button").addEventListener("click", (e) => {
-    document.querySelector("body").style.background = getFarbe()
-})
+// let getFarbe = () => {
+//     let j = document.getElementById("farbeAuswahlen").selectedIndex
+//     let farbe = document.getElementById("farbeAuswahlen").options[j].innerHTML
+//     console.log(farbe)
+//     console.log(farbe.split(" "))
+//     farbe = farbe.split(" ").join("")
+//     return farbe
+// }
+// document.getElementById("button").addEventListener("click", (e) => {
+//     document.querySelector("body").style.background = getFarbe()
+// })
 // ---------------------------------------  Lösung Anass ---------------------------------------

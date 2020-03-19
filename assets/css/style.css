@@ -112,7 +112,8 @@ li a:hover:not(.active) {
 
 /* <!-- ------- Aufgabe 4 ------- CodeFlow Übung lev2_3: getElementsByTagName ------- --> */
 /* <!-- ------- Aufgabe 5 ------- CodeFlow Übung lev2_4: DOM Background Colors ------- --> */
-form {
+
+/* form {
     padding: 5px;
     display: inline-block;
     background: #999;
@@ -122,6 +123,96 @@ form {
 input {
     background: #333;
     color: white;
-}
+} */
 
 /* < !-- ------- Aufgabe 5 ------- CodeFlow Übung lev2_4: DOM Background Colors ------- -->*/
+/* <!-- ------- Aufgabe 6 ------- Projekt lev3_3: Kalorien-Rechner ------- --> */
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section {
+    width: 45vh;
+    border-radius: 15px;
+    background: linear-gradient(rgb(188, 221, 231), rgb(13, 78, 109));
+    padding: 2vh;
+}
+
+h1,
+h2 {
+    color: rgb(11, 40, 53);
+    opacity: 0.7;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5vh;
+}
+
+input {
+    width: 320px;
+    font-size: 2vh;
+    padding: 0.7vh;
+}
+
+input[type="button"],
+input[type="radio"] {
+    width: initial;
+}
+
+select {
+    font-size: 1.5vh;
+    color: rgb(97, 110, 122);
+}
+
+input[type="button"] {
+    font-size: 2vh;
+    margin: 2vh;
+    float: right;
+    background-color: goldenrod;
+    padding: 0.7vh;
+    border-radius: 10px;
+    border: none;
+}
+
+input[type="button"]:active {
+    transform: scale(0.9);
+}
+
+input[type="button"]:focus {
+    outline: none;
+}
+
+table {
+    padding: 1vh;
+    width: 43vh;
+    margin-top: 5vh;
+    border: 1px solid rgb(98, 172, 201);
+    opacity: 0.8;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid rgb(98, 172, 201);
+    outline: 0;
+    width: 33%;
+    padding: 0.5vh;
+}
+
+th {
+    border: 1px solid rgb(98, 172, 201);
+    padding: 0.5vh;
+}
+
+@media (max-width:480px) {
+    section {
+        border-radius: none;
+        height: 100vh;
+    }
+}
+
+/* <!-- ------- Aufgabe 6 ------- Projekt lev3_3: Kalorien-Rechner ------- --> */

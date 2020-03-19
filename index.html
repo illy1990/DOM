@@ -81,7 +81,7 @@
         </select>
         <button id="button">Farbe von Liste Background farben</button>
     </form> -->
-    <form>
+    <!-- <form>
         <select id="farbeAuswahlen" onchange="getFarbe()">
             <option id="1">Medium Orchid</option>
             <option id="2">Mint Cream</option>
@@ -95,11 +95,63 @@
             <option id="10">Slate Gray</option>
         </select>
         <input type="button" id="button" value="Farbe von Liste Background farben">
-    </form>
+    </form> -->
 
     <!-- // --------------------------------------- Eigene Lösung --------------------------------------- -->
 
     <!-- ------- Aufgabe 5 ------- CodeFlow Übung lev2_4: DOM Background Colors ------- -->
+
+    <!-- ------- Aufgabe 6 ------- Projekt lev3_3: Kalorien-Rechner ------- -->
+    <section>
+        <h1>Kalorien rechner</h1>
+        <form>
+            <h2>Körpergröße</h2>
+            <input type="number" id="größe" placeholder="170">
+
+            <h2>Alter</h2>
+            <input type="number" id="alter" placeholder="28">
+            <h2>Gewicht</h2>
+            <input type="number" id="gewicht" placeholder="65">
+            <h2>Körperbau</h2>
+            <input type="radio" name="radio" id="weiblich" value="weiblich" checked>
+            <label>Weiblich</label>
+            <input type="radio" name="radio" id="männlich" value="männlich">
+            <label>Männlich</label>
+
+            <h2>Arbeits- und Freizeitaktivität</h2>
+            <select id="aktivität">
+                <option value="0.95">Schlafen</option>
+                <option value="1.2">Nur sitzen oder liegen</option>
+                <option value="1.5">Sitzende Tätigkeit mit wenig körperlichen Aktivität</option>
+                <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender Tätigkeit</option>
+                <option value="1.9">Überwiegend gehende oder stehende Tätigkeit</option>
+                <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
+            </select>
+            <input type="button" id="button" value="Rechnen">
+        </form>
+        <table>
+            <tr>
+                <th></th>
+                <th>kcal</th>
+                <th>kJ</th>
+            </tr>
+            <tr>
+                <td>Grundumsatz</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Gesamtumsatz</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+
+
+
+    <!-- ------- Aufgabe 6 ------- Projekt lev3_3: Kalorien-Rechner ------- -->
+
 
     <script src="assets/js/main.js"></script>
 </body>

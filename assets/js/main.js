@@ -5,3 +5,9 @@ function myFunction() {
         document.getElementsByClassName("example")[index].style.backgroundColor = "blue";
     }
 }
+
+function ClickMeOnce() {
+
+    document.getElementById("navHome").style.backgroundColor = "pink";
+    document.getElementById("navHome").innerHTML = "emoH"
+}
